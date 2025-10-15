@@ -1,1 +1,7 @@
 
+services:
+  - type: web
+    name: livestream-backend-avanish
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "gunicorn app:app"
